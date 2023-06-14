@@ -1,0 +1,9 @@
+---
+- name: Main Playbook
+  hosts: all
+  tasks:
+    - ansible.builtin.import_role:
+        name: /home/obabdebian/projet-ansible/roles/apache2php.yaml
+
+    - ansible.builtin.import_role:
+        name: /home/obabdebian/projet-ansible/roles/mysqlDB.yaml
